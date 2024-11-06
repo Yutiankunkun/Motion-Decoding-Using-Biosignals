@@ -24,7 +24,7 @@ train
 | 22 | Laser側の傾斜台へ向かってbackside kickturnを行った |
 | 23 | Laser側の傾斜台へ向かってpumpingを行った |
 
-![図](./trick.png)
+![図](./files/trick.png)
 
 実際のデータの読み込み方などについては分析チュートリアル`tutorial.ipynb`を参照されたい.
 
