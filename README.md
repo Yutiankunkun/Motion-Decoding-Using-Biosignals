@@ -1,4 +1,4 @@
-## Motion Decoding Using Biosignals
+## Motion Decoding Using Biosignals スケートボードトリック分類
 
 ### 学習用データ
 
