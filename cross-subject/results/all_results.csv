@@ -1,0 +1,2 @@
+EEGNet,DeepCNN,ShallowCNN,FBCNet,EEGConformer,ESNNet
+50.43% ± 2.18%,49.34% ± 6.09%,51.06% ± 2.15%,50.73% ± 1.18%,51.06% ± 2.66%,51.26% ± 2.32%
