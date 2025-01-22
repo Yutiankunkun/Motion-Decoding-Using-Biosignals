@@ -1,22 +1,21 @@
-# Motion Decoding Using Biosignals with Reservoir Computing for Skateboard Trick Classification
-
----
+## Motion Decoding Using Biosignals with Reservoir Computing for Skateboard Trick Classification
 
 
-## Introduction
+
+### Introduction
 
 In the field of brain computer interfaces (BCIs), the decoding of motion-related brain signals has demonstrated significant potential for various applications including sports training and rehabilitation. 
 
 This work focuses on **skateboard trick classification** using **EEG-based biosignals** and **reservoir computing** techniques. By leveraging data collected during different skateboard maneuvers, we aim to investigate how well machine learning architectures, particularly those that incorporate reservoir computing, can distinguish between frontside/backside kickturns and pumping movements under both **within-subject** and **cross-subject** conditions.
 
----
 
-## Results
+
+### Results
 
 We present our **within-subject** and **cross-subject** classification accuracies below. For additional metrics (precision, recall, and F1-score), refer to the Jupyter notebooks in the provided directories.
 
 
-### Within-subject Results
+**Within-subject Results**
 
 | Subject   | EEGNet            | DeepCNN          | ShallowCNN       | FBCNet            | EEGConformer      | ESNNet            |
 |-----------|-------------------|------------------|------------------|-------------------|-------------------|-------------------|
@@ -27,7 +26,7 @@ We present our **within-subject** and **cross-subject** classification accuracie
 | subject4  | 77.62% ± 3.43%    | 81.50% ± 1.85%   | 69.88% ± 1.12%   | 75.50% ± 1.56%    | 78.88% ± 2.48%    | 82.00% ± 2.09%    |
 
 
-### Cross-subject Results
+**Cross-subject Results**
 
 | Model        | Accuracy           |
 |--------------|--------------------|
@@ -42,9 +41,9 @@ For more details about metrics, please check IPython notebooks:
 - [Within-subject Results](./within-subject/results/all_results.csv)
 - [Cross-subject Results](./cross-subject/results/all_results.csv)
 
----
 
-## Training Data
+
+### Training Data
 
 Unzip `data.zip` to access training data for each participant (denoted as `subject0` through `subject4`). Each participant's folder contains three `.mat` files (`train1.mat`, `train2.mat`, `train3.mat`). The directory structure is as follows:
 
@@ -57,9 +56,9 @@ train
 └── ...
 ```
 
----
 
-## Training Data Details
+
+### Training Data Details
 
 Each `.mat` file contains the following keys:
 
@@ -84,7 +83,7 @@ For details on how to load this data, please see the `tutorial.ipynb` notebook i
 
 ---
 
-## Stance File
+### Stance File
 
 The stance file (`stance.csv`) contains the **board stance** for each participant, specifying how they position themselves on the board (e.g., which foot is forward). 
 
@@ -92,11 +91,12 @@ By incorporating stance information into the classification model, researchers m
 
 ---
 
-## Conclusion and Future Work
+### Conclusion and Future Work
 
 This dataset and benchmark provide valuable insights into **EEG-based motion decoding** for skateboarding maneuvers. The comparison of different neural network architectures—ranging from simple convolutional models to advanced transformers and reservoir-based networks—demonstrates the challenges of **cross-subject** generalization.
 
-### Future Work
+**Future Work**
+
 Future work may involve:
 - **Transfer learning**
 - **Data augmentation**
