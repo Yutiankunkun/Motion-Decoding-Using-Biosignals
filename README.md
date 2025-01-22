@@ -2,6 +2,7 @@
 
 ---
 
+
 ## Introduction
 
 In the field of brain computer interfaces (BCIs), the decoding of motion-related brain signals has demonstrated significant potential for various applications including sports training and rehabilitation. 
@@ -14,6 +15,7 @@ This work focuses on **skateboard trick classification** using **EEG-based biosi
 
 We present our **within-subject** and **cross-subject** classification accuracies below. For additional metrics (precision, recall, and F1-score), refer to the Jupyter notebooks in the provided directories.
 
+
 ### Within-subject Results
 
 | Subject   | EEGNet            | DeepCNN          | ShallowCNN       | FBCNet            | EEGConformer      | ESNNet            |
@@ -23,6 +25,7 @@ We present our **within-subject** and **cross-subject** classification accuracie
 | subject2  | 74.81% ± 4.74%    | 75.32% ± 2.69%   | 69.62% ± 1.18%   | 78.61% ± 1.37%    | 75.06% ± 3.46%    | 78.61% ± 1.13%    |
 | subject3  | 87.62% ± 1.56%    | 89.25% ± 0.52%   | 79.25% ± 1.43%   | 88.62% ± 1.35%    | 89.38% ± 2.03%    | 89.50% ± 1.03%    |
 | subject4  | 77.62% ± 3.43%    | 81.50% ± 1.85%   | 69.88% ± 1.12%   | 75.50% ± 1.56%    | 78.88% ± 2.48%    | 82.00% ± 2.09%    |
+
 
 ### Cross-subject Results
 
@@ -64,6 +67,7 @@ Each `.mat` file contains the following keys:
 - **`data`**: A multi-dimensional array of EEG signals in microvolts, organized as (channels x samples).
 - **`ch_labels`**: The names of all 72 channels based on the [International 10-10 system](https://commons.wikimedia.org/wiki/File:EEG_10-10_system_with_additional_information.svg).
 - **`event`**: Contains the fields `init_index`, `type`, and `init_time`, which indicate the index of the event, the trick type, and the onset time of the trick in seconds, respectively.
+
 
 The **type** field in `event` corresponds to one of the following skateboard maneuvers:
 
